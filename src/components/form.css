@@ -1,0 +1,33 @@
+div{
+    background-color: gray;
+    height: '750px'
+}
+
+form{
+    width: 400px;
+    height: 400px;
+   margin-top: 25px;
+   background-color: rgb(190, 243, 243);
+   border-radius: 5px;
+   text-align: center;
+   justify-content: center;
+   margin: 0 auto;
+   box-shadow: 4px 4px 8px 4px rgba(63, 5, 197, 0.2);
+   font-family: 'roboto';
+   color: rgb(72, 73, 73);
+}
+
+
+.itemname{
+    margin-top: 25px;
+}
+
+input{
+    border-radius: 5px;
+    background-color: rgb(173, 238, 238);
+    color: rgb(72, 73, 73);
+}
+
+#submit{
+    background-color: rgb(126, 125, 131);
+}
