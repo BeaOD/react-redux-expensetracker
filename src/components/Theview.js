@@ -9,7 +9,7 @@ const Theview =(props)=> {
     <Container >
         <Row>
           <h3 style={{textAlign:'center',
-           marginBottom:'20px', fontFamily:'roboto'}}>All Expenses Here</h3>
+           marginBottom:'20px',marginTop:'30px',color:'brown', fontFamily:'arial', fontWeight:'bold'}}>All Expenses </h3>
            
             {props.formsData.map((theform,index)=>{
                 return(

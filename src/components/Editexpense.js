@@ -44,7 +44,7 @@ class Editexpense extends React.Component {
         return (
             <>
             <div>
-                <form onSubmit={this.handleSubmit} style={{marginTop:'25px'}}>
+                <form onSubmit={this.handleSubmit} style={{marginTop:'10px', marginBottom:'20px'}}>
                     <label for="itemname" className="itemname">Item Name</label>
                     <br />
                     <input type="text" id="itemname" name="itemname" value={this.state.itemname}
@@ -66,7 +66,7 @@ class Editexpense extends React.Component {
                     <label for="categories">Categories </label>
                     <br />
                     <select onChange={this.handleChange} name="categories" value={this.state.categories}
-                    style={{backgroundColor:' rgb(173, 238, 238)'}} >
+                  style={{backgroundColor:' rgb(228, 236, 236)', color:'brown', width:'200px', borderRadius:'5px'}} >
   
                     <option  onChange={this.handleChange}
                     >Food & Drink</option>

@@ -42,7 +42,8 @@ class Theform extends React.Component {
     render() {
         return (
             <>
-            <div>
+            <div className="wholeForm">
+                <h2 className="exp">Expenses </h2>
                 <form onSubmit={this.handleSubmit} style={{marginTop:'25px'}}>
                     <label for="itemname" className="itemname">Item Name</label>
                     <br />
@@ -62,27 +63,27 @@ class Theform extends React.Component {
                     onChange={this.handleChange}/>
                     <br /><br />
 
-                    <label for="categories">Categories </label>
+                    <label for="categories" >Categories </label>
                     <br />
                     <select onChange={this.handleChange} name="categories" value={this.state.categories}
-                    style={{backgroundColor:' rgb(173, 238, 238)'}} >
+                    style={{backgroundColor:' rgb(228, 236, 236)', color:'brown', width:'200px', borderRadius:'5px'}} >
   
-                    <option  onChange={this.handleChange}
+                    <option  onChange={this.handleChange} style={{color: 'brown'}}
                     >Food & Drink</option>
 
-                    <option  onChange={this.handleChange}
+                    <option  onChange={this.handleChange} style={{color: 'brown'}}
                     >Housing and Rent</option>
 
-                    <option onChange={this.handleChange}
+                    <option onChange={this.handleChange} style={{color: 'brown'}}
                     >Transportation</option>
 
-                    <option onChange={this.handleChange}
+                    <option onChange={this.handleChange} style={{color: 'brown'}}
                     >Utilities</option>
 
-                    <option onChange={this.handleChange}
+                    <option onChange={this.handleChange} style={{color: 'brown'}}
                     >Health</option>
 
-                    <option onChange={this.handleChange}
+                    <option onChange={this.handleChange} style={{color: 'brown'}}
                     >Miscellaneous</option>
                     </select>
     

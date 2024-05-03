@@ -21,8 +21,8 @@ function Peritemview(props) {
   return (
     <>
      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-            <Modal.Title>
+        <Modal.Header closeButton style={{backgroundColor:'rgb(35, 71, 71)'}}>
+            <Modal.Title style={{fontWeight:'bold', color:'brown'}}>
                 Edit Expenditure
             </Modal.Title>
         </Modal.Header>
@@ -35,21 +35,21 @@ function Peritemview(props) {
     </Modal.Body>
     </Modal>
 
-    <Col md='3' style={{backgroundColor:'#42f593', 
-    borderRadius:'5px' , fontFamily:'monospace', marginRight:'7px', marginTop:'10px'}}>
-        <h3 style={{ textAlign:'center'}}> Expenses</h3>
+    <Col md='3' style={{backgroundColor:' rgb(38, 12, 62)', color:'brown', height:'200px',
+    borderRadius:'5px' , fontFamily:'arial', marginRight:'7px', marginTop:'10px'}}>
+        <h3 style={{ textAlign:'center'}}> Expense</h3>
         <Row>
-    <Card style={{ width: '18rem' , fontSize:'14px'}}>
-      <Card.Body>
-        <Card.Title>{ props.formInfo.itemname}</Card.Title>
-        <Card.Subtitle className="mb-2">Gh¢ { props.formInfo.itemp}</Card.Subtitle>
-        <Card.Subtitle> { props.formInfo.date}</Card.Subtitle >
-        <Card.Subtitle>Categories: 
+    <Card style={{ width: '18rem' , fontSize:'14px', backgroundColor:'rgb(38,12,62)', height:'150px'}}>
+      <Card.Body style={{height:'70px'}}>
+        <Card.Title style={{fontSize:'16px', fontWeight:'bold', color:'gray'}}>{ props.formInfo.itemname}</Card.Title>
+        <Card.Subtitle className="mb-2"  style={{ color:'gray'}}>Gh¢ { props.formInfo.itemp}</Card.Subtitle>
+        <Card.Subtitle style={{ color:'gray'}}> { props.formInfo.date}</Card.Subtitle >
+        <Card.Subtitle style={{ color:'gray'}}>
         { props.formInfo.categories}
         </Card.Subtitle >
-        <Card.Link href="#" style={{color:'none',textDecoration:'none'}}
+        <Card.Link href="#" style={{color:'green',textDecoration:'none', height:'10px', fontWeight:'bold', marginTop:'27px'}}
         onClick={handleShow}>Edit</Card.Link>
-        <Card.Link href="#"style={{color:'red',textDecoration:'none'}}
+        <Card.Link href="#"style={{backgroundColor:'rgb(38,12,62)',textDecoration:'none', width:'100px', height:'20px'}}
         onClick={handleDelete}>Delete</Card.Link>
       </Card.Body>
     </Card>

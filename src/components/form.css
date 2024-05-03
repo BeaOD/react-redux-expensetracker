@@ -1,20 +1,25 @@
-div{
-    background-color: gray;
-    height: '750px'
+.exp{
+    text-align: center;
+    margin-top: 30px;
+    color:brown;
+    font-weight: bold;
 }
+
+
 
 form{
     width: 400px;
     height: 400px;
-   margin-top: 25px;
-   background-color: rgb(190, 243, 243);
+  
+   background-color: rgb(35, 71, 71);
    border-radius: 5px;
    text-align: center;
    justify-content: center;
    margin: 0 auto;
-   box-shadow: 4px 4px 8px 4px rgba(63, 5, 197, 0.2);
-   font-family: 'roboto';
-   color: rgb(72, 73, 73);
+   box-shadow: 4px 4px 8px 4px  rgb(38, 12, 62);
+   font-family: 'arial';
+   font-weight:bold;
+   color: brown;
 }
 
 
@@ -24,10 +29,15 @@ form{
 
 input{
     border-radius: 5px;
-    background-color: rgb(173, 238, 238);
-    color: rgb(72, 73, 73);
+    background-color: rgb(228, 236, 236);
+    color: brown;
+    width:200px;
 }
 
 #submit{
-    background-color: rgb(126, 125, 131);
+    background-color: rgb(177, 176, 182);
+    color: brown;
+    width:200px;
+    font-weight:bold;
+    margin-top: 15px;
 }
